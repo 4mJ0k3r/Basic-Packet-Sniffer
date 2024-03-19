@@ -19,3 +19,13 @@ This Python script is a simple packet sniffer that captures network traffic on a
 2. Install dependencies:
    ```bash
    pip install scapy colorama
+Usage
+Run the script packet_sniffer.py with Python, specifying the network interface to sniff packets on:
+
+python packet_sniffer.py <interface>
+Replace <interface> with the name of the network interface (e.g., eth0).
+
+If no interface is specified, the script will sniff packets on all available interfaces.
+
+Output
+The script prints information about TCP connections and HTTP requests to the console, including source and destination IP addresses, port numbers, URL, HTTP method, and raw data.
